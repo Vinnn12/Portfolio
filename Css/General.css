@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62%;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  font-family: sans-serif;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.9),
+      rgba(127, 127, 127, 0.8)
+    ),
+    url(../Images/Background-Image.avif);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1.25px;
+}
+
+.heading-primary {
+  line-height: 1.2;
+  font-size: 6.4rem;
+}
+
+.heading-secondary {
+  line-height: 1.2;
+  font-size: 4.4rem;
+  margin-bottom: 4.8rem;
+}
+
+.sub-heading {
+  display: inline-block;
+  font-weight: 600;
+  color: #ffa500;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.grid {
+  display: grid;
+  gap: 6.4rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--center {
+  align-items: center;
+}
+
+.link:link,
+.link:visited {
+  font-size: 2rem;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 0.6rem solid transparent;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  transition: all 0.3s;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 0.6rem solid #cf711f;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.icon-link {
+  font-size: 1.8rem;
+  color: #fff;
+  border: 0.2rem solid #fff;
+  padding: 0.8rem;
+  border-radius: 50%;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  padding: 1.6rem 3.2rem;
+  border: none;
+  font-weight: 600;
+  border-radius: 9px;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn--fill {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.btn--outline {
+  color: #ffa500;
+  background-color: #fff;
+  border: 0.2rem solid #ffa500;
+}
+
+.text-center {
+  text-align: center;
+}
